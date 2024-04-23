@@ -1,0 +1,47 @@
+:root {
+  --input-bg-color: #ffffff;
+  --input-border-color: #b0b0b0;
+  --input-text-color: #222222;
+  --label-color: #717171;
+}
+
+label {
+  font-size: 13px;
+  color: var(--label-color);
+  display: block;
+  margin-bottom: 6px;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+textarea {
+  font-family: "Messina-Sans", sans-serif;
+  background: var(--input-bg-color);
+  padding: 10px 16px;
+  min-height: 40px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+  border: 1px solid var(--input-border-color);
+  border-radius: 6px;
+  outline: none;
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--input-text-color);
+  width: 400px;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder,
+input[type="tel"]::placeholder,
+textarea::placeholder {
+  font-size: 13px;
+  color: var(--label-color);
+}

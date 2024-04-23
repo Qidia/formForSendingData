@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formForSendingData</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div>
+      <button id="connect" class="btn btn-connect">connect with us</button>
+    </div>
+
+    <dialog class="modal" id="modal">
+      <header class="modal-header">
+        <button id="close-button" class="button close-button">
+          <svg
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            role="presentation"
+            focusable="false"
+            style="
+              display: block;
+              fill: none;
+              height: 16px;
+              width: 16px;
+              stroke-width: 3;
+              overflow: visible;
+            "
+          >
+            <path d="m6 6 20 20"></path>
+            <path d="m26 6-20 20"></path>
+          </svg>
+        </button>
+      </header>
+
+      <section class="modal-body">
+        <h2 class="modal-title">Feedback</h2>
+        <p class="modal-subtitle">Leave your details and we will contact you</p>
+
+        <form action="#">
+          <label for="first-name">First name *</label>
+          <input id="first-name" type="text" placeholder="First name" />
+
+          <label for="last-name">Last name *</label>
+          <input id="last-name" type="text" placeholder="Last name" />
+
+          <label for="email">Email *</label>
+          <input id="email" type="email" placeholder="Your email" />
+
+          <label for="tel">Telephone</label>
+          <input id="tel" type="tel" placeholder="Telephone" />
+
+          <label for="text-massage">Your message</label>
+          <textarea
+            placeholder="Write your question here"
+            name="text-massage"
+            id=""
+            cols="30"
+            rows="5"
+          ></textarea>
+
+          <button class="btn" type="button">Send message</button>
+        </form>
+      </section>
+    </dialog>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
